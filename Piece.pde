@@ -17,7 +17,7 @@ class Piece extends Square {
 
   }
   
-  public void legal() {
+  public void legalMoves() {
     
   }
   
@@ -45,7 +45,7 @@ public void mousePressed() {
       }
       for(int i = 0; i < pieces.size(); i++) {
         if(((int) (Math.floor(mouseStartX/100)) == (int) (Math.floor(pieces.get(i).x/100)) && (int) (Math.floor(mouseStartY/100)) == (int) (Math.floor(pieces.get(i).y/100)))) {
-          pieces.get(i).legal();
+          pieces.get(i).legalMoves();
         }
       }
     }
@@ -135,3 +135,4 @@ public void mouseReleased() {
     }
   }
 }
+
