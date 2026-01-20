@@ -25,7 +25,7 @@ class Bishop extends Piece {
     }
   }
   
-  public void legal() {
+  public void legalMove() {
     if(toI(file, rank)+9 < 64) {
       for(int i = toI(file, rank)+9; i < 64; i += 9) {
         if(board[i].occupied || board[i-9].rank == board[i].rank-2) {
@@ -64,3 +64,4 @@ class Bishop extends Piece {
     }
   }
 }
+
