@@ -118,7 +118,7 @@ public void mouseReleased() {
           pieces.get(i).y = pieces.get(i).rank*100;
           if(board[toI(pieces.get(i).file, pieces.get(i).rank)].occupied) {
             pieces.remove(board[toI(pieces.get(i).file, pieces.get(i).rank)].heldPiece);
-            //i--;
+            i--;
           }
           board[toI(pieces.get(i).file, pieces.get(i).rank)].occupied = true;
           board[toI(pieces.get(i).file, pieces.get(i).rank)].heldPiece = pieces.get(i);
@@ -135,4 +135,5 @@ public void mouseReleased() {
     }
   }
 }
+
 
