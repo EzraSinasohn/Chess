@@ -25,7 +25,7 @@ class Knight extends Piece {
     }
   }
   
-  public void legal() {
+  public void legalMoves() {
     if(file > 0 && rank > 1 && !(board[toI(file, rank)-17].occupied && board[toI(file, rank)-17].heldPiece.white == white)) {legal.add(board[toI(file,rank)-17]);}
     if(file < 7 && rank > 1 && !(board[toI(file, rank)-15].occupied && board[toI(file, rank)-15].heldPiece.white == white)) {legal.add(board[toI(file,rank)-15]);}
     if(file > 1 && rank > 0 && !(board[toI(file, rank)-10].occupied && board[toI(file, rank)-10].heldPiece.white == white)) {legal.add(board[toI(file,rank)-10]);}
@@ -36,3 +36,4 @@ class Knight extends Piece {
     if(file > 1 && rank < 7 && !(board[toI(file, rank)+6].occupied && board[toI(file, rank)+6].heldPiece.white == white)) {legal.add(board[toI(file,rank)+6]);}
   }
 }
+
