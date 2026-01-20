@@ -14,7 +14,7 @@ class Square {
     else if(green && marked) {fill(191, 115, 86);}
     else if(white) {fill(235, 236, 211);}
     else {fill(125, 148, 90);}
-    square(file*100, rank*100, 100);
+    rect(file*100, rank*100, 100, 100);
     if(legal.contains(board[toI(file, rank)])) {
       if(pieces.contains(heldPiece)) {
         heldPiece.captureCircle();
@@ -44,3 +44,4 @@ public void mouseClicked() {
     }
   }
 }
+
