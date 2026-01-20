@@ -27,7 +27,7 @@ class Pawn extends Piece {
     }
   }
   
-  public void legal() {
+  public void legalMoves() {
     if(white) {
       if(!board[toI(file, rank-1)].occupied) {
         legal.add(board[toI(file, rank-1)]);
@@ -59,3 +59,4 @@ class Pawn extends Piece {
     }
   }
 }
+
