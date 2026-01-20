@@ -25,7 +25,7 @@ class King extends Piece {
     }
   }
   
-  public void legal() {
+  public void legalMoves() {
     if(file > 0) {
       for(int f = file-1; f > file-2; f--) {
         if(board[toI(f, rank)].occupied) {
@@ -100,3 +100,4 @@ class King extends Piece {
     }
   }
 }
+
